@@ -1,0 +1,42 @@
+index html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="HTML Masters">
+  <title>Ticket de compra</title>
+  <link rel="stylesheet" href="estilos.css"/>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+<body>
+    <ion-app>
+        <ion-content>
+            <ion-grid>
+                <ion-row>
+                  <ion-col size="10" offset="1" offset-md="2"  size-md="8">
+                    <div>
+                        <ion-label for="Articulo">Articulo:</ion-label>
+                        <ion-input type="text" id="Articulo"></ion-input>
+                    </div>
+                    
+                    <div>
+                        <ion-label for="Valor">Precio:</ion-label>
+                        <ion-input type="number" id="Valor"></ion-input>
+                    </div>
+                    <ion-button onclick="calcularTotal()">Agregar</ion-button>
+                    <ion-item id="item"></ion-item>
+                    <p id="total">Total: $0.00</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+        </ion-content>
+    </ion-app>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
